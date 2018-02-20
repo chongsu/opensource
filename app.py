@@ -27,7 +27,7 @@ PORT = 8080
 
 
 
-script_path = "cgi-bin/hit-counter.py"
+script_path = "cgi-bin/hit-count.py"
 
 
 
