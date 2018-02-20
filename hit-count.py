@@ -1,29 +1,19 @@
 #! /usr/bin/env python
-
-
-
 import cgi
-
 import cgitb
-
 import time
-
 import os
 
 cgitb.enable()
 
-
-
 hit_count_path = os.path.join(os.path.dirname(__file__), "hit-count.txt")
-
-
 
 if os.path.isfile(hit_count_path):
 
     hit_count = int(open(hit_count_path).read())
 
     hit_count += 1
-
+    
 else:
 
     hit_count = 1
@@ -75,7 +65,9 @@ html = """
   Hit count: {1}
 
   </p>
-
+  <p>
+  Let's try to modify
+  </p>
 </body>
 
 </html>
